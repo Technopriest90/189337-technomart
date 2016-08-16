@@ -2,7 +2,6 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-  font-style: normal;
   font-family: 'Cuprum', 'Arial', sans-serif;
 }
 
@@ -87,7 +86,7 @@ h3 {
   font-size: 17px;
 }
 
-.header-order .header-order-confirmation {
+.header-order-confirmation {
   background-color: #63a63e;
 }
 
@@ -104,12 +103,12 @@ h3 {
   padding-left: 53px;
 }
 
-.main-header-about .main-header-contacts {
+.main-header-contacts {
   float: left;
   margin-left: 71px;
 }
 
-.main-header-about .main-header-phone {
+.main-header-phone {
   display: block;
   padding-top: 7px;
   padding-right: 50px;
@@ -166,7 +165,7 @@ h3 {
 
 .main-nav a {
   display: block;
-  width: 134.2px;
+  width: 134px;
 
   padding-top: 22px;
   padding-bottom: 21px;
@@ -174,41 +173,39 @@ h3 {
 
 /**Первая часть мейна со слайдером**/
 
-main .features {
-  margin-top: 59px;
+.features {
+  margin-right: -10px;
+  margin-left: -10px;
+  padding-top: 59px;
 }
 
 
-.features .features-item {
+.features-item {
   float: left;
   width: 300px;
   min-height: 123px;
-  margin-left: 20px;
+  margin: 0 10px 20px;
 }
 
-.features .features-item-material {
+.features-item-material {
   margin-left: 0;
 
   background-color: #f6b22d;
 }
 
-.features .features-item-instrument {
+.features-item-instrument {
   background-color: #4aafde;
 }
 
-.features .features-item-technics {
+.features-item-technics {
   background-color: #cc79d1;
 }
 
-.features .features-item-discount {
-  margin-top: 20px;
-
+.features-item-discount {
   background-color: #85d179;
 }
 
-.features .features-item-delivery {
-  margin-top: 20px;
-
+.features-item-delivery {
   background-color: #f6b22d;
 }
 
@@ -233,10 +230,9 @@ main .features {
 
 /**Слайдер №1**/
 
-.features .features-slider {
+.features-slider {
   float: left;
   width: 620px;
-  margin-top: 20px;
   margin-left: 0;
   overflow: hidden;
 }
@@ -301,7 +297,7 @@ main h1 {
 }
 /** фильтер **/
 
-main .filter {
+.filter {
   float: left;
   width: 220px;
 }
@@ -329,7 +325,7 @@ main .filter {
 
 /**Сортировка**/
 
-main .sorting {
+.sorting {
   float: right;
   width: 700px;
   padding: 14px 10px;
@@ -374,7 +370,7 @@ main .sorting {
 /**Вторая часть мейна популярные товары**/
 
 
-main .main-title {
+.main-title {
   margin-top: 53px;
   margin-bottom: 21px;
 
@@ -389,7 +385,7 @@ main .main-title {
   padding-left: 30px;
 }
 
-.main-title a {
+.main-title .btn {
   float: right;
   width: 253px;
   margin-top: 25px;
@@ -404,13 +400,13 @@ main .main-title {
   width: 100%;
 }
 
-.goods .goods-item {
+.goods-item {
   position: relative;
 
   display: inline-block;
   width: 218px;
   min-height: 316px;
-  margin-top: 20px;
+  margin-bottom: 20px;
   margin-right: 20px;
   vertical-align: top;
 
@@ -423,16 +419,16 @@ main .main-title {
   border: 1px solid #ccc;
 }
 
-.goods .goods-item:last-child {
+.goods-item:last-child {
   margin-right: 0px;
 }
 
-.goods-item .goods-item-image {
+.goods-item-image {
   margin: 0;
   padding: 0;
 }
 
-.goods-item .goods-item-title {
+.goods-item-title {
   min-height: 40px;
   margin-bottom: 17px;
   padding-right: 25px;
@@ -443,7 +439,7 @@ main .main-title {
   white-space: normal;
 }
 
-.goods-item .goods-item-discount {
+.goods-item-discount {
   min-height: 18px;
   margin-bottom: 13px;
 
@@ -464,7 +460,7 @@ main .main-title {
   text-align: center;
 }
 
-.goods-item .goods-item-order {
+.goods-item-order {
   display: none;
 }
 
@@ -474,6 +470,8 @@ main .main-title {
 }
 .suppliers a {
   display: inline-block;
+  width: 218px;
+  height: 143px;
   margin-right: 20px;
   margin-top: 20px;
   vertical-align: top;
@@ -485,7 +483,7 @@ main .main-title {
 
 /** Четвертая часть мейна сервисы+слайдер **/
 
-main .services {
+.services {
   min-height: 522px;
 }
 
@@ -510,20 +508,20 @@ main .services {
 
 /** Пятая часть мейна информационный контент **/
 
-main .info {
+.info {
   margin-bottom: 86px;
 }
 
-.info .info-company {
+.info-company {
   width: 540px;
 }
 
-.info .info-contacts {
+.info-contacts {
   margin-left: 100px;
 }
 
-.info .info-company,
-.info .info-contacts {
+.info-company,
+.info-contacts {
   float: left;
   margin-top: 77px;
 }
@@ -555,7 +553,7 @@ main .info {
   padding: 10px 0;
 }
 
-.info-contacts .info-map {
+.info-map {
   padding-bottom: 26px;
 }
 
@@ -571,7 +569,7 @@ main .info {
   background: #32425c;
 }
 
-.main-footer .main-footer-about {
+.main-footer-about {
   float: left;
   width: 380px;
 }
@@ -580,7 +578,7 @@ main .info {
   float: left;
 }
 
-.main-footer .main-footer-nav {
+.main-footer-nav {
   float: left;
   width: 550px;
   margin: 0;
@@ -610,7 +608,7 @@ main .info {
 }
 /**Вторая часть футера копирайты+соц.сеть.**/
 
-footer .main-footer-info {
+.main-footer-info {
   min-height: 107px;
   padding-top: 41px;
 
@@ -619,13 +617,13 @@ footer .main-footer-info {
   background: #293449;
 }
 
-.main-footer-info .main-footer-copyright {
+.main-footer-copyright {
   display: block;
   float: left;
   width: 240px;
 }
 
-.main-footer-info .social {
+.social {
   float: left;
   width: 134px;
   margin-left: 150px;
