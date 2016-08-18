@@ -253,6 +253,7 @@ img {
 }
 
 .features-slider-item {
+  position: relative;
   height: 266px;
 }
 
@@ -285,6 +286,12 @@ img {
   margin-left: 25px;
   padding-top: 12px;
   padding-bottom: 12px;
+}
+
+.features-slider-item a {
+  position: absolute;
+  bottom: 3px;
+  left: 6px;
 }
 
 /**Оформление мейна второй страницы**/
