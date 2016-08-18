@@ -41,9 +41,9 @@
       </div>
       <nav class="main-nav">
         <ul>
-          <li><a class="active" href="#">Главная</a></li>
+          <li><a class="active" href="index.html">Главная</a></li>
           <li><a href="#">Компания</a></li>
-          <li><a href="#">Каталог</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="#">Спецпредложения</a></li>
           <li><a href="#">Доставка</a></li>
@@ -65,20 +65,26 @@
       <div class="clearfix">
         <form class="filter" action="get">
           <h2>Фильтр</h2>
-          <h3>Цена:</h3>
-          <div class="range-slider">
+          <fieldset>
+            <legend>Цена:</legend>
+            <div class="range-slider">
 
-          </div>
-          <h3>Производители:</h3>
-          <label><input type="checkbox" value="1" checked>Bosch</label>
-          <label><input type="checkbox" value="2">Интерскол</label>
-          <label><input type="checkbox" value="3" checked>Makita</label>
-          <label><input type="checkbox" value="4">Dewalt</label>
-          <label><input type="checkbox" value="5">Hitachi</label>
-          <h3>Питание:</h3>
-          <label><input type="radio" value="6" name="filter-radio" checked>Аккумуляторные</label>
-          <label><input type="radio" value="7" name="filter-radio">Сетевые</label>
-          <input type="submit" value="Показать">
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Производители:</legend>
+            <label><input type="checkbox" value="1" checked>Bosch</label>
+            <label><input type="checkbox" value="2">Интерскол</label>
+            <label><input type="checkbox" value="3" checked>Makita</label>
+            <label><input type="checkbox" value="4">Dewalt</label>
+            <label><input type="checkbox" value="5">Hitachi</label>
+          </fieldset>
+          <fieldset>
+            <legend>Питание:</legend>
+            <label><input type="radio" value="6" name="filter-radio" checked>Аккумуляторные</label>
+            <label><input type="radio" value="7" name="filter-radio">Сетевые</label>
+            <input type="submit" value="Показать">
+          </fieldset>
         </form>
         <div class="catalog-content">
           <div class="sorting">

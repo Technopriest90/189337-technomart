@@ -116,7 +116,6 @@ img {
 .main-header-about p {
   float: left;
   margin: 0;
-
   padding-left: 53px;
 }
 
@@ -198,12 +197,12 @@ img {
   float: left;
   width: 300px;
   min-height: 123px;
-  margin: 0 10px 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
 }
 
 .features-item-material {
-  margin-left: 0;
-
   background-color: #f6b22d;
 }
 
@@ -239,7 +238,6 @@ img {
   padding-bottom: 10px;
 
   background-color: rgba(0, 0, 0, 0.1);
-
 }
 
 /**Слайдер №1**/
@@ -247,7 +245,6 @@ img {
 .features-slider {
   float: left;
   width: 620px;
-  margin-left: 0;
   overflow: hidden;
 }
 
@@ -255,15 +252,16 @@ img {
   display: none;
 }
 
+.features-slider-item {
+  height: 266px;
+}
 
 .features-slider-item:first-child {
-  height: 266px;
   display: block;
   background: #9a8a73 url("../img/features-slider-item-drill.jpg") no-repeat;
 }
 
 .features-slider-item:last-child {
-  height: 266px;
   display: none;
   background: #a27a6f url("../IMG/features-slider-item-perforator.jpg");
 }
@@ -306,6 +304,7 @@ img {
 main h1 {
   margin: 0;
   padding: 33px 0;
+  margin-bottom: 20px;
 
   background: #f2f6f8;
 }
@@ -314,6 +313,12 @@ main h1 {
 .filter {
   float: left;
   width: 220px;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border-style: none;
 }
 
 .filter h2 {
@@ -342,7 +347,8 @@ main h1 {
 
 .sorting {
   float: right;
-  width: 700px;
+  width: 680px;
+  margin-bottom: 20px;
   padding: 14px 10px;
 
   background: #f7f3ec;
@@ -373,6 +379,7 @@ main h1 {
 
 .paginator {
   float: left;
+  margin-bottom: 60px;
 }
 
 .paginator a {
@@ -422,8 +429,9 @@ main h1 {
   display: inline-block;
   width: 218px;
   min-height: 316px;
+  margin-right: 10px;
   margin-bottom: 20px;
-  margin-right: 20px;
+  margin-left: 10px;
   vertical-align: top;
 
   font-size: 17px;
@@ -478,14 +486,18 @@ main h1 {
 
 /** Третья часть мейна производители **/
 .suppliers {
+  margin-right: -10px;
+  margin-left: -10px;
+
   font-size: 0;
 }
 .suppliers a {
   display: inline-block;
   width: 218px;
   height: 143px;
-  margin-right: 20px;
-  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
   vertical-align: top;
 }
 
