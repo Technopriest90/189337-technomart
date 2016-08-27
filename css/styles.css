@@ -1,4 +1,6 @@
 body {
+  min-width: 960px;
+
   font-size: 13px;
   line-height: 1.2;
   color: #000000;
@@ -360,7 +362,7 @@ input:focus + button {
 
 /**Блок пользователя**/
 
-.user-block .login {
+.user-block-login {
   position: relative;
 
   display: inline-block;
@@ -378,7 +380,7 @@ input:focus + button {
   text-decoration: none;
 }
 
-.user-block .login::after {
+.user-block-login::after {
   position: absolute;
   left: 17px;
   top: 13px;
@@ -395,15 +397,15 @@ input:focus + button {
   content: "";
 }
 
-.user-block .login:hover::after {
+.user-block-login:hover::after {
   background-position: -309px -65px;
 }
 
-.user-block .login:active::after {
+.user-block-login:active::after {
   background-position: -264px -65px;
 }
 
-.user-block .registration {
+.user-block-registration {
   display: inline-block;
   margin-left: 10px;
   padding: 9px 25px;
@@ -416,21 +418,22 @@ input:focus + button {
   text-decoration: none;
 }
 
-.user-block .login:hover,
-.user-block .registration:hover {
+.user-block-login:hover,
+.user-block-registration:hover {
   color: #ee3643;
 }
 
-.user-block .login:active,
-.user-block .registration:active {
+.user-block-login:active,
+.user-block-registration:active {
   color: #cacaca;
 }
 
 /**Блок пользователя вторя страница**/
-.user-block .account-menu {
+.user-block-accountmenu {
   position: relative;
 
   display: inline-block;
+  margin-bottom: 5px;
   padding-top: 9px;
   padding-right: 65px;
   padding-bottom: 9px;
@@ -444,7 +447,7 @@ input:focus + button {
   text-decoration: none;
 }
 
-.user-block .account-menu::after {
+.user-block-accountmenu::after {
   position: absolute;
   left: 15px;
   top: 13px;
@@ -461,23 +464,23 @@ input:focus + button {
   content: "";
 }
 
-.user-block .account-menu:hover::after {
+.user-block-accountmenu:hover::after {
   background-position: -152px -84px;
 }
 
-.user-block .account-menu:active {
+.user-block-accountmenu:active {
   color: #cacaca;
 }
 
-.user-block .account-menu:active::after {
+.user-block-accountmenu:active::after {
   background-position: -130px -84px;
 }
 
-.user-block .logout {
+.user-block-logout {
   position: relative;
 }
 
-.user-block .logout::after {
+.user-block-logout::after {
   position: absolute;
   left: -30px;
   top: -15px;
@@ -494,17 +497,16 @@ input:focus + button {
   content: "";
 }
 
-.user-block .logout:hover::after {
+.user-block-logout:hover::after {
   background-position: 0 -84px;
 }
 
-.user-block .logout:active::after {
+.user-block-logout:active::after {
   background-position: -286px -65px;
 }
 
-.user-block .adds-menu {
+.user-block-addsmenu {
   display: inline-block;
-  margin-top: 5px;
   margin-left: 17px;
 
   font-size: 16px;
@@ -513,13 +515,13 @@ input:focus + button {
   color: #32425c;
 }
 
-.user-block .adds-menu:last-child {
+.user-block-addsmenu:last-child {
   position: relative;
 
   margin-left: 30px;
 }
 
-.user-block .adds-menu:last-child::before {
+.user-block-addsmenu:last-child::before {
   position: absolute;
   left: -14px;
   top: 9px;
@@ -536,24 +538,38 @@ input:focus + button {
   content: "";
 }
 
-.user-block .adds-menu:hover {
+.user-block-addsmenu:hover {
   color: #ee3643;
 }
 
-.user-block .adds-menu:active {
+.user-block-addsmenu:active {
   color: #cacaca;
 }
 
 /**Главное меню**/
 
 .main-nav ul {
+  position: relative;
+
   font-size: 0;
   margin: 0;
   padding: 0;
   width: inherit;
+  padding-left: 20px;
 
   background-color: #32425c;
-  border-bottom: 5px solid #293449;
+}
+
+.main-nav ul::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  height: 5px;
+  background: #293449;
+
+  content: "";
 }
 
 .main-nav li {
@@ -567,7 +583,7 @@ input:focus + button {
 
   padding-top: 21px;
   padding-left: 31px;
-  padding-bottom: 19px;
+  padding-bottom: 24px;
   padding-right: 31px;
 
   text-align: center;
@@ -576,17 +592,12 @@ input:focus + button {
   color: white;
 }
 
-.main-nav li:first-child {
-  padding-left: 20px;
-}
-
 .main-nav a:hover {
   background: #293449;
 }
 
 .main-nav a:active {
   background: #1d2739;
-  border-color: #1d2739;
 }
 
 .main-nav .active {
