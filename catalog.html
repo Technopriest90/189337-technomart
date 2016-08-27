@@ -1,4 +1,6 @@
-<head>
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
   <meta charset="UTF-8">
   <title>Technomart</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|Open+Sans:300,400,600|PT+Sans+Narrow|PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
@@ -108,7 +110,7 @@
         <div class="catalog-content">
           <div class="sorting">
             <h2>Сортировка</h2>
-            <a href="#">по цене</a>
+            <a class="active">по цене</a>
             <a href="#">по типу</a>
             <a href="#">по функционалу</a>
             <a class="on-increase" href="#">Вверх</a>
@@ -208,7 +210,7 @@
           </div>
           <div class="paginator clearfix">
               <a href="#">Предыдующая</a>
-              <a class="actived">1</a>
+              <a class="active">1</a>
               <a href="#">2</a>
               <a href="#">3</a>
               <a href="#">Следующая</a>
@@ -231,7 +233,7 @@
     <div class="container">
       <div class="main-footer-about clearfix">
         <a class="logo" href="#" >Техномарт</a>
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
            +7 (812) 555-05-55</p>
       </div>
       <ul class="footer-nav footer-nav-menu">
@@ -272,9 +274,26 @@
   <div class="modal-content">
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
     <span>Товар добавлен в корзину!</span>
-    <form class="submit-form" action="https://echo.technomart.ru" method="post">
+    <form class="submit-form-order" action="https://echo.technomart.ru" method="post">
       <button class="btn btn-order" type="submit">оформить заказ</button>
       <button class="btn btn-close" type="submit">продолжить покупки</button>
     </form>
   </div>
+  <script>
+  var link = document.querySelector(".goods-item-buy");
+
+      var popup = document.querySelector(".modal-content");
+      var close = popup.querySelector(".modal-content-close");
+
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("modal-content-show");
+      });
+
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("modal-content-show");
+      });
+  </script>
 </body>
+</html>
