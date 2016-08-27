@@ -41,7 +41,7 @@
       </div>
       <nav class="main-nav">
         <ul>
-          <li class="active"><a href="index.html">Главная</a></li>
+          <li><a class="active">Главная</a></li>
           <li><a href="#">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="#">Новости</a></li>
@@ -53,21 +53,21 @@
     </div>
   </header>
 
-  <main>
+  <main class="main-index">
     <div class="container">
       <!-- Первая часть мейна со слайдером-->
       <div class="features clearfix">
         <div class="features-item features-item-material new">
           <h2>Материалы</h2>
-          <a href="#">На любой вкус</a>
+          <a class="btn" href="#">На любой вкус</a>
         </div>
         <div class="features-item features-item-instrument">
           <h2>Инструмент</h2>
-          <a href="#">На все случаи</a>
+          <a class="btn" href="#">На все случаи</a>
         </div>
         <div class="features-item features-item-technics">
           <h2>Техника</h2>
-          <a href="#">Для стройки</a>
+          <a class="btn" href="#">Для стройки</a>
         </div>
         <div class="features-item features-slider">
           <input id="left-arrow" type="radio" name="arrow" checked>
@@ -80,22 +80,22 @@
             <div class="features-slider-item">
               <h2>Перфораторы</h2>
               <span>Настоящие мужские игрушки</span>
-              <a href="#">Открыть каталог</a>
+              <a class="btn" href="#">Открыть каталог</a>
             </div>
             <div class="features-slider-item">
               <h2>Дрели</h2>
               <span>Соседям на радость</span>
-              <a href="#">Открыть каталог</a>
+              <a class="btn" href="#">Открыть каталог</a>
             </div>
           </div>
         </div>
         <div class="features-item features-item-discount">
           <h2>Скидки 50%</h2>
-          <a href="#">на 350 товаров</a>
+          <a class="btn" href="#">на 350 товаров</a>
         </div>
         <div class="features-item features-item-delivery">
           <h2>Доставка</h2>
-          <a href="#">Бесплатно</a>
+          <a class="btn" href="#">Бесплатно</a>
         </div>
       </div>
       <!-- Вторая часть мейна популярные товары-->
@@ -108,7 +108,7 @@
           <figure class="goods-item-image"><img width="218" height="170" src="img/goods-1.jpg" alt="Перфоратор BOSCH BFG 9000"></figure>
           <h2 class="goods-item-title">Перфоратор BOSCH BFG 9000</h2>
           <div class="goods-item-discount">32500 Р.</div>
-          <a href=# class="btn btn-price">25500 Р.</a>
+          <a href=# class="btn">25500 Р.</a>
           <div class="goods-item-order">
             <a class="goods-item-buy" href="#">Купить</a>
             <a class="goods-item-marks" href="#">В закладки</a>
@@ -118,7 +118,7 @@
           <figure class="goods-item-image"><img width="218" height="170" src="img/goods-2.jpg" alt="Перфоратор BOSCH BFG 3000"></figure>
           <h2 class="goods-item-title">Перфоратор BOSCH BFG 3000</h2>
           <div class="goods-item-discount">22500 Р.</div>
-          <a href=# class="btn btn-price">15500 Р.</a>
+          <a href=# class="btn">15500 Р.</a>
           <div class="goods-item-order">
             <a class="goods-item-buy" href="#">Купить</a>
             <a class="goods-item-marks" href="#">В закладки</a>
@@ -128,7 +128,7 @@
           <figure class="goods-item-image"><img width="218" height="170" src="img/goods-3.jpg" alt="Перфоратор BOSCH BFG 6000"></figure>
           <h2 class="goods-item-title">Перфоратор BOSCH BFG 6000</h2>
           <div class="goods-item-discount">30500 Р.</div>
-          <a href=# class="btn btn-price">25500 Р.</a>
+          <a href=# class="btn">25500 Р.</a>
           <div class="goods-item-order">
             <a class="goods-item-buy" href="#">Купить</a>
             <a class="goods-item-marks" href="#">В закладки</a>
@@ -138,7 +138,7 @@
           <figure class="goods-item-image"><img width="218" height="170" src="img/goods-4.jpg" alt="Перфоратор BOSCH BFG 2000"></figure>
           <h2 class="goods-item-title">Перфоратор BOSCH BFG 2000</h2>
           <div class="goods-item-discount"></div>
-          <a href=# class="btn btn-price">12500 Р.</a>
+          <a href=# class="btn">12500 Р.</a>
           <div class="goods-item-order">
             <a class="goods-item-buy" href="#">Купить</a>
             <a class="goods-item-marks" href="#">В закладки</a>
@@ -207,8 +207,8 @@
       <div class="container">
         <div class="info-company">
           <h2>Компания «техномарт»</h2>
-          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
-             строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
+          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+             строительства&nbsp;не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
              Техномарт работает со многими транспортными компаниями: </p>
           <ul class="list">
@@ -272,22 +272,26 @@
       </div>
     </div>
   </footer>
-  <div class="modal-content modal-content-submit">
+  <div class="modal-content">
     <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
     <form class="submit-form" action="https://echo.technomart.ru" method="post">
-      <fieldset>
-        <legend>Ваше имя:</legend>
-        <input class="submit-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+      <fieldset class="submit-form-content">
+        <div class="submit-form-item">
+          <legend>Ваше имя:</legend>
+          <input class="submit-name" type="text" name="name" placeholder="Представьтесь, пожалуйста">
+        </div>
+        <div class="submit-form-item">
+          <legend>Ваш e-mail:</legend>
+          <input class="sumbit-email" type="text"  name="e-mail" placeholder="Для отправки ответа">
+        </div>
+        <div class="submit-form-item">
+          <legend>Текст письма:</legend>
+          <textarea class="text-mail" name="text-mail" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+        </div>
       </fieldset>
-      <fieldset>
-        <legend>Ваш e-mail:</legend>
-        <input class="sumbit-email" type="text"  name="e-mail" placeholder="Для отправки ответа">
-      </fieldset>
-      <fieldset>
-        <legend>Текст письма:</legend>
-        <textarea class="text-mail" name="text-mail" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-      </fieldset>
-      <button class="btn btn-submit" type="submit">Отправить</button>
+      <div class="submit-form-btn">
+        <button class="btn" type="submit">Отправить</button>
+      </div>
     </form>
   </div>
 </body>
