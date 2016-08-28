@@ -25,7 +25,7 @@ h3 {
 }
 
 .header-menu {
-  min-height: 41px;
+  min-height: 42px;
   margin-bottom: 47px;
 
   background: #293449;
@@ -143,7 +143,7 @@ img {
   height: 17px;
 
   background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: -23px -84px;
+  background-position: -29px -95px;
   opacity: 0.3;
   text-indent: -10000px;
   border-style: none;
@@ -153,6 +153,7 @@ img {
 
 .search input{
   width: 270px;
+  max-height: 42px;
   padding-top: 12px;
   padding-right: 10px;
   padding-bottom: 12px;
@@ -193,7 +194,7 @@ input:hover + button {
 }
 
 input:focus + button {
-  background-position: -42px -84px;
+  background-position: -54px -95px;
 }
 
 /**Меню заказов**/
@@ -246,7 +247,7 @@ input:focus + button {
   height: 16px;
 
   background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: -174px -84px;
+  background-position: -222px -95px;
 
   text-indent: -10000px;
   opacity: 0.3;
@@ -255,10 +256,10 @@ input:focus + button {
 }
 
 .header-order-basket::after {
-  width: 16px;
+  width: 17px;
   height: 16px;
 
-  background-position: -61px -84px;
+  background-position: -79px -95px;
 }
 
 .header-order-marks:hover::after,
@@ -353,7 +354,7 @@ input:focus + button {
   height: 19px;
 
   background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: -80px -84px;
+  background-position: -104px -95px;
 
   text-indent: -10000px;
 
@@ -408,7 +409,7 @@ input:focus + button {
   height: 17px;
 
   background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: -264px -65px;
+  background-position: -288px -70px;
 
   text-indent: -10000px;
 
@@ -416,11 +417,11 @@ input:focus + button {
 }
 
 .user-block-login:hover::after {
-  background-position: -309px -65px;
+  background-position: -345px -70px;
 }
 
 .user-block-login:active::after {
-  background-position: -264px -65px;
+  background-position: -288px -70px;
 }
 
 .user-block-registration {
@@ -475,7 +476,7 @@ input:focus + button {
   height: 18px;
 
   background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: -130px -84px;
+  background-position: -166px -95px;
 
   text-indent: -10000px;
 
@@ -483,7 +484,7 @@ input:focus + button {
 }
 
 .user-block-accountmenu:hover::after {
-  background-position: -152px -84px;
+  background-position: -194px -95px;
 }
 
 .user-block-accountmenu:active {
@@ -491,7 +492,7 @@ input:focus + button {
 }
 
 .user-block-accountmenu:active::after {
-  background-position: -130px -84px;
+  background-position: -166px -95px;
 }
 
 .user-block-logout {
@@ -504,11 +505,11 @@ input:focus + button {
   top: -15px;
 
   display: block;
-  width: 20px;
+  width: 21px;
   height: 17px;
 
   background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: -286px -65px;
+  background-position: -316px -70px;
 
   text-indent: -10000px;
 
@@ -516,11 +517,11 @@ input:focus + button {
 }
 
 .user-block-logout:hover::after {
-  background-position: 0 -84px;
+  background-position: 0 -95px;
 }
 
 .user-block-logout:active::after {
-  background-position: -286px -65px;
+  background-position: -316px -70px;
 }
 
 .user-block-addsmenu {
@@ -687,11 +688,11 @@ input:focus + button {
   right: 30px;
 
   display: block;
-  width: 74px;
+  width: 75px;
   height: 61px;
 
   background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: -46px 0;
+  background-position: -52px 0;
 
   text-indent: -10000px;
 
@@ -715,7 +716,7 @@ input:focus + button {
   height: 62px;
 
   background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: -123px 0;
+  background-position: -135px 0;
 
   text-indent: -10000px;
 
@@ -739,7 +740,7 @@ input:focus + button {
   height: 72px;
 
   background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: -203px 0;
+  background-position: -221px 0;
 
   text-indent: -10000px;
 
@@ -763,7 +764,7 @@ input:focus + button {
   height: 63px;
 
   background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: -264px 0;
+  background-position: -288px 0;
 
   text-indent: -10000px;
 
@@ -979,7 +980,7 @@ input:focus + button {
   height: 12px;
 
   background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: -260px -84px;
+  background-position: -338px -95px;
 
   text-indent: -10000px;
 
@@ -996,11 +997,11 @@ input:focus + button {
   top: 23px;
 
   display: block;
-  width: 14px;
-  height: 16px;
+  width: 15px;
+  height: 12px;
 
   background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: -243px -84px;
+  background-position: -315px -95px;
 
   text-indent: -10000px;
 
@@ -1248,7 +1249,7 @@ fieldset {
   height: 23px;
 
   background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: -101px -84px;
+  background-position: -131px -95px;
   border: none;
 }
 
@@ -1257,7 +1258,7 @@ fieldset {
   height: 23px;
 
   background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: -101px -84px;
+  background-position: -131px -95px;
   border: none;
 }
 
@@ -1266,7 +1267,7 @@ fieldset {
   height: 23px;
 
   background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: -101px -84px;
+  background-position: -131px -95px;
   border: none;
 }
 
@@ -1275,7 +1276,7 @@ fieldset {
   height: 23px;
 
   background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: -101px -84px;
+  background-position: -131px -95px;
   border: none;
 }
 
@@ -1284,7 +1285,7 @@ fieldset {
   height: 23px;
 
   background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: -101px -84px;
+  background-position: -131px -95px;
   border: none;
 }
 
@@ -1600,7 +1601,7 @@ fieldset {
   height: 16px;
 
   background: transparent url("../img/sprite/sprite.png") no-repeat;
-  background-position: -61px -84px;
+  background-position: -79px -95px;
 
   text-indent: -10000px;
   opacity: 0.3;
@@ -2053,7 +2054,7 @@ fieldset {
 
 .main-footer-about {
   float: left;
-  width: 328px;
+  width: 323px;
 }
 
 .main-footer-about .logo {
@@ -2068,7 +2069,7 @@ fieldset {
 }
 
 .main-footer-about p {
-  width: 328px;
+  width: 323px;
   margin: 0;
   padding: 0;
   margin-bottom: 51px;
@@ -2080,7 +2081,7 @@ fieldset {
 
 .footer-nav {
   float: right;
-  width: 612px;
+  width: 617px;
   margin: 0;
   padding: 0;
 
@@ -2191,21 +2192,21 @@ fieldset {
   width: 20px;
   height: 12px;
 
-  background-position: -190px -84px;
+  background-position: -244px -95px;;
 }
 
 .social-btn-fb::after {
   width: 10px;
   height: 18px;
 
-  background-position: -231px -84px;
+  background-position: -297px -95px;
 }
 
 .social-btn-inst::after {
   width: 17px;
   height: 17px;
 
-  background-position: -212px -84px;
+  background-position: -272px -95px;
 }
 
 .social-btn:last-child {
