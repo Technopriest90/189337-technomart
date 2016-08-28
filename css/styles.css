@@ -965,9 +965,8 @@ input:focus + button {
   text-transform: uppercase;
   font-family: 'PT Sans', 'Arial', sans-serif;
 
-  vertical-align: top;
-
   color: #000000;
+  vertical-align: top;
 }
 
 .breadcrumbs a::after {
@@ -1190,10 +1189,10 @@ fieldset {
   font-family: 'PT Sans', 'Arial', sans-serif;
 
   cursor: pointer;
-  user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  user-select: none;
 }
 
 .filter-checkbox label:last-child {
