@@ -6,7 +6,7 @@
     <title>Technomart</title>
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|Open+Sans:300,400,600|PT+Sans+Narrow|PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css" >
+    <link rel="stylesheet" href="css/styles.min.css" >
   </head>
 
   <body>
@@ -267,14 +267,13 @@
       </div>
     </footer>
     <div class="modal-content-order">
-      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <button class="modal-content-close modal-close" type="button" title="Закрыть">Закрыть</button>
       <span>Товар добавлен в корзину!</span>
-      <form class="submit-form-order" action="https://echo.technomart.ru" method="post">
-        <button class="btn btn-order" type="submit">оформить заказ</button>
-        <button class="btn btn-close" type="submit">продолжить покупки</button>
-      </form>
+      <div class="submit-order">
+        <a class="btn btn-order">оформить заказ</a>
+        <a class="btn btn-close modal-close">продолжить покупки</a>
+      </div>
     </div>
-    <script src="js/popup.js">
-    </script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

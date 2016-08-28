@@ -1308,7 +1308,14 @@ input[type="radio"]:checked + label::before {
   border: 1px solid #e5e5e5;
   outline: none;
   cursor: pointer;
+}
 
+.filter input[type="submit"]:hover {
+  border-color: #bdc6ca;
+}
+
+.filter input[type="submit"]:active {
+  border-color: #ee3643;
 }
 
 /**Сортировка**/
@@ -1628,7 +1635,7 @@ input[type="radio"]:checked + label::before {
   width: 136px;
   min-height: 20px;
   padding-top: 10px;
-  padding-bottom: 7px;
+  padding-bottom: 8px;
 
   font-size: 17px;
 }
@@ -2351,7 +2358,7 @@ input[type="radio"]:checked + label::before {
   color: #000000;
 }
 
-.submit-form-order {
+.submit-order {
   margin: 0;
   padding: 37px 60px;
 
