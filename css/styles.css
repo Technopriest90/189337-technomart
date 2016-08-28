@@ -60,7 +60,6 @@ h3 {
   border: none;
   border-radius: 2px;
   cursor: pointer;
-
 }
 
 .btn:hover {
@@ -120,8 +119,16 @@ img {
   background: #ca2c37;
 }
 
+.logo:hover::after {
+  background: #9a212a;
+}
+
 .logo:active {
   background: #ba2732;
+}
+
+.logo:active::after {
+  background: #8e1e26;
 }
 
 /** Поисковая форма**/
@@ -188,9 +195,8 @@ input:hover + button {
 }
 
 .search input:focus {
-  background: #ffffff;
-
   color: #000000;
+  background: #ffffff;
 }
 
 input:focus + button {
@@ -638,7 +644,6 @@ input:focus + button {
   margin-bottom: 33px;
 }
 
-
 .features-item {
   float: left;
   width: 300px;
@@ -678,7 +683,6 @@ input:focus + button {
 .features-item-instrument {
   position: relative;
 
-
   background-color: #4aafde;
 }
 
@@ -701,7 +705,6 @@ input:focus + button {
 
 .features-item-technics {
   position: relative;
-
 
   background-color: #cc79d1;
 }
@@ -726,7 +729,6 @@ input:focus + button {
 .features-item-discount {
   position: relative;
 
-
   background-color: #85d179;
 }
 
@@ -749,7 +751,6 @@ input:focus + button {
 
 .features-item-delivery {
   position: relative;
-
 
   background-color: #f6b22d;
 }
@@ -1131,7 +1132,7 @@ fieldset {
   padding: 10px 10px;
 
   font-size: 17px;
-  line-height: 1.059;
+  line-height: 1;
   text-align: center;
   font-family: 'PT Sans', 'Arial', sans-serif;
 
@@ -1140,6 +1141,7 @@ fieldset {
   border-radius: 2px;
   border: none;
   outline: none;
+  box-sizing: border-box;
 }
 
 .price-controls .min-price {
@@ -1176,7 +1178,8 @@ fieldset {
   content: "";
 }
 
-.filter label {
+input[type="checkbox"] + label,
+input[type="radio"] + label {
   position: relative;
 
   display: block;
@@ -1226,12 +1229,12 @@ fieldset {
 
 .filter-checkbox label::after {
   position: absolute;
-  top: -1px;
+  top: 0;
   left: -33px;
 
 
   display: block;
-  width: 18px;
+  width: 19px;
   height: 18px;
 
   background: transparent;
@@ -1243,49 +1246,11 @@ fieldset {
   content: "";
 }
 
-
-#bosch:checked ~ label[for="bosch"]::after {
+input[type="checkbox"]:checked + label::after {
   width: 27px;
   height: 23px;
 
-  background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: -131px -95px;
-  border: none;
-}
-
-#interskol:checked ~ label[for="interskol"]::after {
-  width: 27px;
-  height: 23px;
-
-  background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: -131px -95px;
-  border: none;
-}
-
-#makita:checked ~ label[for="makita"]::after {
-  width: 27px;
-  height: 23px;
-
-  background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: -131px -95px;
-  border: none;
-}
-
-#dewalt:checked ~ label[for="dewalt"]::after {
-  width: 27px;
-  height: 23px;
-
-  background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: -131px -95px;
-  border: none;
-}
-
-#hitachi:checked ~ label[for="hitachi"]::after {
-  width: 27px;
-  height: 23px;
-
-  background: url("../img/sprite/sprite.png") no-repeat;
-  background-position: -131px -95px;
+  background: url("../img/sprite/sprite.png") -131px -95px no-repeat;
   border: none;
 }
 
@@ -1297,7 +1262,6 @@ fieldset {
   position: absolute;
   top: -1px;
   left: -33px;
-
 
   display: block;
   width: 16px;
@@ -1312,7 +1276,7 @@ fieldset {
   content: "";
 }
 
-#battery:checked ~ label[for="battery"]::before {
+input[type="radio"]:checked + label::before {
   position: absolute;
   top: 10px;
   left: -30px;
@@ -1330,26 +1294,6 @@ fieldset {
 
   content: "";
 }
-
-#dc:checked ~ label[for="dc"]::before {
-  position: absolute;
-  top: 10px;
-  left: -30px;
-
-
-  display: block;
-  width: 8px;
-  height: 8px;
-
-  background: #c1c1c1;
-  border-radius: 50%;
-  transform: translate(50%,-50%);
-
-  text-indent: -10000px;
-
-  content: "";
-}
-
 
 .filter input[type="submit"] {
   margin-top: 56px;
@@ -1374,7 +1318,7 @@ fieldset {
   width: 700px;
   min-height: 38px;
   margin-bottom: 20px;
-  padding: 9px 19px;
+  padding: 10px 19px;
 
   background: #f7f3ec;
 
@@ -1999,7 +1943,7 @@ fieldset {
   width: 180px;
 }
 
-.info-company .list {
+.list {
   margin: 0;
   padding: 0;
   padding-bottom: 15px;
@@ -2054,7 +1998,7 @@ fieldset {
 
 .main-footer-about {
   float: left;
-  width: 323px;
+  width: 325px;
 }
 
 .main-footer-about .logo {
@@ -2069,7 +2013,6 @@ fieldset {
 }
 
 .main-footer-about p {
-  width: 323px;
   margin: 0;
   padding: 0;
   margin-bottom: 51px;
@@ -2081,7 +2024,7 @@ fieldset {
 
 .footer-nav {
   float: right;
-  width: 617px;
+  width: 615px;
   margin: 0;
   padding: 0;
 
@@ -2238,7 +2181,8 @@ fieldset {
 
 /* Всплывающая форма */
 
-.modal-content {
+.modal-content,
+.modal-content-order{
   position: fixed;
   top: 50%;
   left: 50%;
@@ -2268,6 +2212,8 @@ fieldset {
   border: 0;
   outline: 0;
   cursor: pointer;
+
+  z-index: 100;
 }
 
 .modal-content-close::before,
@@ -2345,18 +2291,17 @@ fieldset {
   margin-right: 20px;
 }
 
-.submit-form-btn {
-  margin: 0 auto;
-  padding: 37px 80px;
-
-  text-align: center;
-}
 
 .modal-content .btn  {
   width: 460px;
+  margin: 37px 80px;
+
+  text-align: center;
+  outline: none;
 }
 
-.modal-content {
+.modal-content,
+.modal-content-order {
   display: none;
 }
 
@@ -2366,7 +2311,7 @@ fieldset {
 
 /** модальная форма на второй странице **/
 
-.modal-content span {
+.modal-content-order span {
   position: relative;
 
   display: block;
@@ -2379,7 +2324,7 @@ fieldset {
   text-align: center;
 }
 
-.modal-content span::after {
+.modal-content-order span::after {
   position: absolute;
   top: 45px;
   left: 80px;
@@ -2392,15 +2337,15 @@ fieldset {
   content: "";
 }
 
-.modal-content .btn-order,
-.modal-content .btn-close {
+.modal-content-order .btn-order,
+.modal-content-order .btn-close {
   width: 220px;
   margin-left: 20px;
 
   outline: none;
 }
 
-.modal-content .btn-close {
+.modal-content-order .btn-close {
   background: #ffffff;
 
   color: #000000;
