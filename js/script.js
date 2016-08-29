@@ -31,18 +31,18 @@ var mapClose = mapPopup.querySelector(".modal-content-close");
 
   mapOpen.addEventListener("click", function(event) {
     event.preventDefault();
-    mapPopup.classList.add("modal-content-show");
+    mapPopup.classList.add("modal-content-showmap");
   });
 
   mapClose.addEventListener("click", function(event) {
     event.preventDefault();
-    mapPopup.classList.remove("modal-content-show");
+    mapPopup.classList.remove("modal-content-showmap");
   });
 
   window.addEventListener("keydown", function(event) {
     if (event.keyCode === 27) {
-      if (mapPopup.classList.contains("modal-content-show")) {
-        mapPopup.classList.remove("modal-content-show");
+      if (mapPopup.classList.contains("modal-content-showmap")) {
+        mapPopup.classList.remove("modal-content-showmap");
       }
     }
   });
