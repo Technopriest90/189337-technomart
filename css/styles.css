@@ -503,12 +503,14 @@ input:focus + button {
 
 .user-block-logout {
   position: relative;
+
+  display: inline-block;
 }
 
 .user-block-logout::after {
   position: absolute;
-  left: -30px;
   top: -15px;
+  left: -30px;
 
   display: block;
   width: 21px;
@@ -914,13 +916,16 @@ input:focus + button {
 
 .features-slider-controls label:first-child::before {
   left: -265px;
-
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
   transform: rotate(-135deg);
 }
 
 .features-slider-controls label:last-child::before {
   left: 270px;
-
+  
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
@@ -1288,6 +1293,8 @@ input[type="radio"]:checked + label::before {
 
   background: #c1c1c1;
   border-radius: 50%;
+  -webkit-transform: translate(50%,-50%);
+  -ms-transform: translate(50%,-50%);
   transform: translate(50%,-50%);
 
   text-indent: -10000px;
@@ -1944,6 +1951,7 @@ input[type="radio"]:checked + label::before {
 
   font-size: 13px;
   line-height: 1.846;
+  font-family: 'PT Sans', 'Arial', sans-serif;
 }
 
 .info-contacts p {
@@ -1983,8 +1991,11 @@ input[type="radio"]:checked + label::before {
 }
 
 .info-map {
+  display: block;
   margin-top: 7px;
   margin-bottom: 40px;
+  
+  cursor: pointer;
 }
 
 .info-company .btn {
@@ -2130,6 +2141,8 @@ input[type="radio"]:checked + label::before {
   display: block;
 
   background: url("../img/sprite/sprite.png") no-repeat;
+  -webkit-transform: translate(50%,-50%);
+  -ms-transform: translate(50%,-50%);
   transform: translate(50%,-50%);
 
   text-indent: -10000px;
@@ -2187,9 +2200,21 @@ input[type="radio"]:checked + label::before {
 }
 
 /* Всплывающая форма */
+@keyframes bounce {
+  0% {
+    transform: translate(-50%,-2000px);
+  }
+  50% {
+    transform: translate(-50%,10%);
+  }
+  100% {
+    transform: translate(-50%,-50%);
+  }
+}
 
 .modal-content,
-.modal-content-order{
+.modal-content-order,
+.modal-content-map {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -2200,9 +2225,21 @@ input[type="radio"]:checked + label::before {
   background: #ffffff;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
   border-top: 7px solid #ee3643;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 
   z-index: 1001;
+}
+
+.modal-content-map {
+  display: none;
+  width: 940px;
+  height: 446px;
+
+  background: #e9e5dc url("img/map-modal.png");
+  border: none;
+  box-shadow: 0 0 12px 4px rgba(35, 31, 32, 0.5);
 }
 
 .modal-content-close {
@@ -2239,10 +2276,14 @@ input[type="radio"]:checked + label::before {
 }
 
 .modal-content-close::before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .modal-content-close::after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
@@ -2314,6 +2355,8 @@ input[type="radio"]:checked + label::before {
 
 .modal-content-show {
   display: block;
+  
+  animation: bounce 1s;
 }
 
 /** модальная форма на второй странице **/
@@ -2364,4 +2407,3 @@ input[type="radio"]:checked + label::before {
 
   background: #f1f1f1;
 }
-
