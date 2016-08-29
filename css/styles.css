@@ -60,6 +60,7 @@ h3 {
   border: none;
   border-radius: 2px;
   cursor: pointer;
+  vertical-align: top;
 }
 
 .btn:hover {
@@ -226,6 +227,7 @@ input:focus + button {
   color: white;
   text-decoration: none;
   box-sizing: border-box;
+  vertical-align: top;
 }
 
 .header-order .header-order-marks {
@@ -379,6 +381,8 @@ input:focus + button {
 }
 
 .main-header .user-block {
+  position: relative;
+
   float: right;
   width: 300px;
 
@@ -403,6 +407,7 @@ input:focus + button {
   color: #000000;
   background: white;
   text-decoration: none;
+  vertical-align: top;
 }
 
 .user-block-login::after {
@@ -441,6 +446,7 @@ input:focus + button {
   color: #000000;
   background: white;
   text-decoration: none;
+  vertical-align: top;
 }
 
 .user-block-login:hover,
@@ -470,6 +476,7 @@ input:focus + button {
 
   color: #000000;
   background: white;
+  vertical-align: top;
 }
 
 .user-block-accountmenu::after {
@@ -502,15 +509,9 @@ input:focus + button {
 }
 
 .user-block-logout {
-  position: relative;
-
-  display: inline-block;
-}
-
-.user-block-logout::after {
   position: absolute;
-  top: -15px;
-  left: -30px;
+  top: 13px;
+  right: 11px;
 
   display: block;
   width: 21px;
@@ -524,11 +525,11 @@ input:focus + button {
   content: "";
 }
 
-.user-block-logout:hover::after {
+.user-block-logout:hover {
   background-position: 0 -95px;
 }
 
-.user-block-logout:active::after {
+.user-block-logout:active {
   background-position: -316px -70px;
 }
 
@@ -540,6 +541,7 @@ input:focus + button {
   line-height: 1.286;
 
   color: #32425c;
+  vertical-align: baseline;
 }
 
 .user-block-addsmenu:last-child {
@@ -896,6 +898,7 @@ input:focus + button {
   border: 2px solid #ffffff;
   border-radius: 50%;
   cursor: pointer;
+  vertical-align: top;
 }
 
 .features-slider-controls label:first-child::before,
@@ -923,7 +926,7 @@ input:focus + button {
 
 .features-slider-controls label:last-child::before {
   left: 270px;
-  
+
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
@@ -1709,6 +1712,7 @@ input[type="radio"]:checked + label::before {
   vertical-align: top;
 
   border: 1px solid #ccc;
+  vertical-align: top;
 }
 
 
@@ -1994,7 +1998,7 @@ input[type="radio"]:checked + label::before {
   display: block;
   margin-top: 7px;
   margin-bottom: 40px;
-  
+
   cursor: pointer;
 }
 
@@ -2064,6 +2068,7 @@ input[type="radio"]:checked + label::before {
   display: inline-block;
   margin-bottom: 35px;
   margin-left: 60px;
+  vertical-align: baseline;
 }
 
 .footer-nav a {
@@ -2127,6 +2132,7 @@ input[type="radio"]:checked + label::before {
 
   background: #212a3a;
   border-radius: 50%;
+  vertical-align: top;
 }
 
 .social-btn:hover {
@@ -2239,7 +2245,7 @@ input[type="radio"]:checked + label::before {
 
   background: #e9e5dc url("img/map-modal.png");
   border: none;
-  box-shadow: 0 0 12px 4px rgba(35, 31, 32, 0.5);
+  box-shadow: 0 0 15px 1px rgba(35, 31, 32, 0.5);
 }
 
 .modal-content-close {
@@ -2263,7 +2269,7 @@ input[type="radio"]:checked + label::before {
 .modal-content-close::before,
 .modal-content-close::after {
   position: absolute;
-  top: 8px;
+  top: 7px;
   left: 0;
 
   width: 25px;
@@ -2296,7 +2302,7 @@ input[type="radio"]:checked + label::before {
 
 .submit-form-item legend {
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 8px;
 
   font-size: 18px;
   line-height: 1;
@@ -2304,7 +2310,7 @@ input[type="radio"]:checked + label::before {
 
 .submit-form-item input,
 .submit-form-item textarea {
-  padding: 12px 14px;
+  padding: 10px 14px;
 
   font-family: 'PT Sans', 'Arial', sans-serif;
 
@@ -2313,18 +2319,20 @@ input[type="radio"]:checked + label::before {
   box-sizing: border-box;
 }
 .submit-form-item input {
-  width: 216px;
+  width: 220px;
 }
 
 .submit-form-item textarea {
- width: 456px;
- height: 110px;
+  width: 460px;
+  height: 116px;
+
+  resize: none;
 }
 
 .submit-form-content {
   padding-top: 48px;
   padding-right: 80px;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
   padding-left: 80px;
 
   background: #ffffff;
@@ -2332,7 +2340,7 @@ input[type="radio"]:checked + label::before {
 
 .submit-form-item {
   float: left;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .submit-name {
@@ -2355,7 +2363,7 @@ input[type="radio"]:checked + label::before {
 
 .modal-content-show {
   display: block;
-  
+
   animation: bounce 1s;
 }
 
