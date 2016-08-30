@@ -515,8 +515,6 @@ input:focus + button {
 
   width: 43px;
   height: 43px;
-
-  text-indent: -10000px;
 }
 
 .user-block-logout::after {
@@ -535,6 +533,8 @@ input:focus + button {
   -ms-transform: translate(-50%,-50%);
   -o-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
+
+  text-indent: -10000px;
 
   content: "";
 }
