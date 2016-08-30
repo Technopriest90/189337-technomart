@@ -510,26 +510,40 @@ input:focus + button {
 
 .user-block-logout {
   position: absolute;
-  top: 14px;
-  right: 11px;
+  top: 0;
+  right: 0;
 
+  width: 43px;
+  height: 43px;
+
+  text-indent: -10000px;
+}
+
+.user-block-logout::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+    
   display: block;
   width: 21px;
   height: 17px;
 
   background: url("../img/sprite/sprite.png") no-repeat;
   background-position: -316px -70px;
-
-  text-indent: -10000px;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
 
   content: "";
 }
 
-.user-block-logout:hover {
+.user-block-logout:hover::after {
   background-position: 0 -95px;
 }
 
-.user-block-logout:active {
+.user-block-logout:active::after {
   background-position: -316px -70px;
 }
 
@@ -2106,7 +2120,7 @@ input[type="radio"]:checked + label::before {
 /**Вторая часть футера копирайты+соц.сеть.**/
 
 .main-footer-info {
-  min-height: 107px;
+  min-height: 70px;
   padding-top: 37px;
 
   color: #ffffff;
@@ -2446,7 +2460,7 @@ input[type="radio"]:checked + label::before {
   width: 66px;
   height: 66px;
 
-  background: url(../img/checkmark.png);
+  background: url("../img/checkmark.png");
 
   content: "";
 }
