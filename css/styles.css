@@ -513,8 +513,8 @@ input:focus + button {
   top: 0;
   right: 0;
 
-  width: 43px;
-  height: 43px;
+  width: 45px;
+  height: 45px;
 }
 
 .user-block-logout::after {
